@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/india.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0516fe;
+    font-family: Arial, sans-serif;
+}
+
+#heading {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-size: 60px;
+    font-style: cursive;
+}
+
+#table {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#U_details, #v_details {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#U_details {
+    flex: 1 1 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+#v_details {
+    flex: 1 1 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+#info_u {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#info_u img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#body {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form img {
+    margin-right: 20px;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+form button {
+    font-size: 1em;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+form button:hover {
+    background-color: darkblue;
+}
+
+@media (max-width: 1200px) {
+    #table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #U_details, #v_details {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #info_u, #body {
+        font-size: 1em;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form button {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #info_u, #body {
+        font-size: 0.8em;
+    }
+
+    form img {
+        margin-right: 0;
+        width: 80px;
+    }
+
+    form button {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}

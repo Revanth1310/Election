@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/images/india.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#heading {
+    color: blue;
+    font-size: 2.5em;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    margin: 20px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 500px;
+    
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-form:hover {
+    transform: scale(1.02);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    background-color: #007bff;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    color: #007bff;
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .login-form {
+        width: 45%;
+        margin-bottom: 0;
+    }
+}
